@@ -1,15 +1,17 @@
-import { jsx, css } from 'theme-ui';
+import { Styled } from "theme-ui";
 import React from 'react';
-import LOGO from './logo.png'; 
+
 
 
 const MainHeader = ({text}) => (
-  <>
-    <img src={LOGO} height="100%"/> 
+  <div>
     <Styled.h1>
       {text}
     </Styled.h1>
-  </>
+    <Styled.h2>
+      16 . 07 . 22
+    </Styled.h2>
+  </div>
 );
 
 export default MainHeader;
