@@ -10,4 +10,4 @@ const MainHeader = ({text}) => (
   </div>
 );
 
-export default Credits;
+export default MainHeader;
