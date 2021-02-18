@@ -3,7 +3,7 @@ module.exports = {
     title: `M 💍 X`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
-    image: "",
+    image: "images/logo.png",
     url: "https://gatsby-theme-countdown-simple-example.netlify.com"
   },
   plugins: [
