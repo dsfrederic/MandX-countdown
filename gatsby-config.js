@@ -12,7 +12,7 @@ module.exports = {
       options: {
         basePath: "/",
         mainHeader: "Magalie 💍 Xavier",
-        secondaryHeader: " ", 
+        secondaryHeader: "16.07.22", 
         // hideHours: true, 
         // hideMinutes: true,
         // hideSeconds: true,
