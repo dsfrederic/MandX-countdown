@@ -20,7 +20,7 @@ module.exports = {
         hideWhatsappShareButton: true,
         hideTwitterShareButton: true,
         hideFacebookShareButton: true,
-        hideParticles: true,
+        // hideParticles: true,
         targetDate: "2022-07-16 14:00:00",
       }
     }
