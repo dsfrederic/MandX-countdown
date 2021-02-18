@@ -11,7 +11,7 @@ module.exports = {
       resolve: "@rafaelquintanilha/gatsby-theme-countdown",
       options: {
         basePath: "/",
-        mainHeader: "M 💍 X",
+        mainHeader: "Magalie 💍 Xavier",
         secondaryHeader: " ", 
         // hideHours: true, 
         // hideMinutes: true,
