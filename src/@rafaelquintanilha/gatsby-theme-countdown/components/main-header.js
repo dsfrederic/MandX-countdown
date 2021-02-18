@@ -4,10 +4,12 @@ import LOGO from './logo.png';
 
 
 const MainHeader = ({text}) => (
-  <div style={{height: "100%"}}>
-  <h1>{text}</h1>
-  <img src={LOGO} height="100%"/> 
-  </div>
+  <>
+    <img src={LOGO} height="100%"/> 
+    <Styled.h1>
+      {text}
+    </Styled.h1>
+  </>
 );
 
 export default MainHeader;
