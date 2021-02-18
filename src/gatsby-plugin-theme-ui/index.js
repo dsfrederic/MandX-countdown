@@ -3,8 +3,8 @@ import theme from "@rafaelquintanilha/gatsby-theme-countdown/src/gatsby-plugin-t
 
 export default merge({}, theme, {
   colors: {
-    primary: "#007500",
-    background: "#007500"
+    primary: "#0C2D1C",
+    background: "#0C2D1C"
   },
   svg: {
     fill: "#00A300"
