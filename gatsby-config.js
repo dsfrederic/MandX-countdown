@@ -21,7 +21,7 @@ module.exports = {
         hideTwitterShareButton: true,
         hideFacebookShareButton: true,
         hideParticles: true,
-        targetDate: "2022-07-16 00:00:00",
+        targetDate: "2022-07-16 14:00:00",
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
