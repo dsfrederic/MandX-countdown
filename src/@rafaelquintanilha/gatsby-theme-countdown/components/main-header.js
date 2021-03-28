@@ -9,7 +9,7 @@ const MainHeader = ({text}) => (
       {text}
     </Styled.h1>
     <Styled.h2>
-      16 . 07 . 22
+      18 . 06 . 22
     </Styled.h2>
   </div>
 );
