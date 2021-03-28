@@ -21,7 +21,7 @@ const Credits = () => (
       <div>
 
         <h3>15-17 juli 2022</h3>
-        <p>Trouwweekend in de Champagne streek</p>
+        <p>Trouwweekend in de Champagne streek te Frankrijk</p>
         
         <h5>Vrijdag</h5>
         <p>Welkomstborrel</p>
