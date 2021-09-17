@@ -4,7 +4,7 @@ export default class rsvp extends React.Component {
   render() {
     return (
       <p>
-        test new page
+        test new page DUMMY
       </p>
     )
   }
