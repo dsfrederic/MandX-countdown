@@ -23,7 +23,10 @@ module.exports = {
         // hideParticles: true,
         targetDate: "2022-07-16 14:00:00",
       }
-    }
+    },
+    require("dotenv").config({
+      path: `.env.${process.env.NODE_ENV}`,
+     })
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
