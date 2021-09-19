@@ -86,7 +86,7 @@ export default class rsvp extends React.Component {
     return (
       <Layout>
         <div>
-          Inleidende tekst
+          Inleidende tekstje
         </div>
         <Box as="form" onSubmit={this.handleSubmit}>
 
