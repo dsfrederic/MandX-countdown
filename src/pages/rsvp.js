@@ -6,14 +6,9 @@ import { navigate } from "gatsby"
 import {
   Label,
   Input,
-  Select,
   Textarea,
-  Radio,
-  Checkbox,
-  Slider,
   Box,
   Button,
-  Grid,
   Switch,
   Spinner
 } from 'theme-ui'
