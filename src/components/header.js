@@ -10,7 +10,7 @@ import { jsx } from "theme-ui"
 const Header = ({ siteTitle }) => (
   <header
     sx={{
-      backgroundColor: "background",
+      backgroundColor: "primary",
       marginBottom: `1.45rem`,
     }}
   >
