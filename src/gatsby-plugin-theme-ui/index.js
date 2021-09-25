@@ -3,8 +3,9 @@ const PRIMARY_COLOR_LIGHT = "#49916c"
 
 const theme = {
     colors: {
-        text: '#000',
+        text: "#fff",
         primary: PRIMARY_COLOR_LIGHT,
+        background: PRIMARY_COLOR,
     },
     forms: {
         // label: {
@@ -78,6 +79,7 @@ const theme = {
             padding: 0,
             my: 'auto',
             width: 'auto',
+            margin: 0
         },
         Footer: {
             display: "flex",

@@ -29,6 +29,8 @@ const CountdownContainer = ({
       borderStyle: "solid",
       borderColor: "border",
       flexDirection: ["column", "row"],
+      alignItems: "center",
+      justifyContent: "center",
       "& > *": {
         borderRightWidth: [0, "1px"],
         borderRightStyle: [0, "solid"],
