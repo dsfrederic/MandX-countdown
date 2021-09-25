@@ -17,5 +17,15 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          "Oswald", 
+          "Cardo"
+        ],
+        display: 'swap'
+      }
+    }
   ],
 };

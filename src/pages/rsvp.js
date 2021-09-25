@@ -92,9 +92,9 @@ export default class rsvp extends React.Component {
 
           <Label htmlFor="email">Email</Label>
           <Input type="email" required name="email" id="email" mb={3} value={this.state.email} onChange={this.handleInputChange} />
-
-          <Switch required label="Zal je aanwezig zijn op de babyborrel?" checked={this.state.present} onChange={this.togglePresent} />
-
+          <div style={{marginBottom: "1em"}}>
+          <Switch required label="Zal je aanwezig zijn op het trouwfeest?" checked={this.state.present} onChange={this.togglePresent} />
+          </div>
 
           {this.state.present && <>
             <Label htmlFor="attendees">Met hoeveel personen zal je aanwezig zijn?</Label>

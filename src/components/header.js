@@ -12,6 +12,7 @@ const Header = ({ siteTitle }) => (
     sx={{
       backgroundColor: "primary",
       marginBottom: `1.45rem`,
+      fontFamily: "heading",
     }}
   >
     <div
@@ -30,7 +31,6 @@ const Header = ({ siteTitle }) => (
           style={{
             color: `white`,
             textDecoration: `none`,
-            fontFamily: "British Shorthair"
           }}
         >
           {siteTitle}

@@ -1,11 +1,15 @@
+import { bulma } from '@theme-ui/presets'
+
+
 const PRIMARY_COLOR = "#0C2D1C" // DARKER
 const PRIMARY_COLOR_LIGHT = "#49916c"
 
 const theme = {
+    ...bulma,
     colors: {
-        text: "#fff",
+        text: "#000",
         primary: PRIMARY_COLOR_LIGHT,
-        background: PRIMARY_COLOR,
+        background: "#fff"
     },
     forms: {
         // label: {
@@ -40,9 +44,10 @@ const theme = {
         },
     },
     fonts: {
-        default:
-            '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
-    },
+        body: '"Cardo",system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+        heading: 'Oswald ,Georgia, serif',
+        monospace: 'Menlo, monospace',
+      },
     fontSizes: [14, 16, 18, 20, 22, 27, 36, 64, 80],
     lineHeights: {
         text: "1.45",
@@ -55,7 +60,7 @@ const theme = {
         Layout: {
             backgroundColor: "background",
             color: "text",
-            fontFamily: "default",
+            fontFamily: "body",
             fontSize: 2,
             lineHeight: "text",
             padding: 0,
