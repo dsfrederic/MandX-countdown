@@ -56,7 +56,8 @@ const Header = ({ siteTitle }) => {
           alignItems: 'center',
           justifyContent: "center",
           flexDirection: "row",
-          margin: 0
+          margin: 0,
+          color: "primary"
         }}>
           <Link
             to="/faq"
@@ -66,10 +67,11 @@ const Header = ({ siteTitle }) => {
               color: 'inherit',
               margin: "0 5px",
               '&:hover': {
-                textDecoration: "underline",
+                color: "white"
               },
               '&.active': {
                 fontWeight: 'bolder',
+                color: "white"
               },
             }}
           >
@@ -84,10 +86,11 @@ const Header = ({ siteTitle }) => {
               color: 'inherit',
               margin: "0 5px",
               '&:hover': {
-                textDecoration: "underline",
+                color: "white"
               },
               '&.active': {
                 fontWeight: 'bolder',
+                color: "white"
               },
             }}
           >
@@ -102,10 +105,11 @@ const Header = ({ siteTitle }) => {
               color: 'inherit',
               margin: "0 5px",
               '&:hover': {
-                textDecoration: "underline",
+                color: "white"
               },
               '&.active': {
                 fontWeight: 'bolder',
+                color: "white"
               },
             }}
           >
