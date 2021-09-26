@@ -97,7 +97,7 @@ const Header = ({ siteTitle }) => {
           </Link>
           |
           <Link
-            to="/countdown"
+            to="/"
             activeClassName="active"
             sx={{
               textDecoration: "none",
