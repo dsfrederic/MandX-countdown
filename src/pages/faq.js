@@ -1,6 +1,8 @@
 import { Divider } from "@theme-ui/components"
 import * as React from "react"
 import Layout  from "../components/layout"
+import downloadFile from '../files/Bb-en-hotels-Rennepont-april-2021.pdf' 
+
 
 // markup
 const Countdown = () => {
@@ -13,16 +15,20 @@ const Countdown = () => {
         <p>Hieronder kan je alvast wat praktische info vinden omtrent ons trouwweekend.</p>
 
        <span style={{padding: "25px"}}></span>
-        <h4>Bla bla bla </h4>
+        <h4>Dit is een vraag?</h4>
+        <p>
+          
+        <a href={downloadFile} download>Download bestand</a>{` `}
+
+        </p>
+        <Divider />
+        <h4>Dit is een vraag?</h4>
         <p>Antwoord</p>
         <Divider />
-        <h4>Bla bla bla </h4>
+        <h4>Dit is een vraag?</h4>
         <p>Antwoord</p>
         <Divider />
-        <h4>Bla bla bla </h4>
-        <p>Antwoord</p>
-        <Divider />
-        <h4>Bla bla bla </h4>
+        <h4>Dit is een vraag?</h4>
         <p>Antwoord</p>
         <Divider />
     </Layout>
