@@ -12,6 +12,7 @@ const theme = {
         background: "#fff", 
         headingTxtColor: "#fff"
     },
+    breakpoints: ['40em', '56em', '64em'],
     forms: {
         // label: {
         //     fontSize: 1,

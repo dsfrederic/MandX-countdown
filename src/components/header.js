@@ -3,9 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 /** @jsx jsx */
-import { jsx } from "theme-ui"
-
-
+import { jsx, Divider, Flex, Box } from "theme-ui"
 
 const Header = ({ siteTitle }) => {
   return (
@@ -17,29 +15,52 @@ const Header = ({ siteTitle }) => {
         margin: 0
       }}
     >
-      <div
-        style={{
+
+      <Flex
+        sx={{
           margin: `0 auto`,
           maxWidth: 960,
           padding: `1.45rem 1.0875rem`,
-          textAlign: "center",
           color: `white`,
+          justifyContent: "space-between",
+          flexWrap: "nowrap",
+          flexDirection: ['column', 'column', 'row', 'row'],
         }}
       >
-        <h1>
+        <Flex sx={{
+          backgroundColor: "primary",
+          fontFamily: "heading",
+          textAlign: "center",
+          alignItems: 'center',
+          margin: 0, 
+          flexDirection: "column"
+        }}>
+          <h1 style={{marginBottom: 0, paddingBottom: 0}}>
+            <Link
+              to="/"
+              style={{
+                textDecoration: `none`,
+                color: `white`,
+              }}
+            >
+              {siteTitle}
+            </Link>
+          </h1>
+          <p style={{marginTop: 0, paddingTop: 0}}>16 . 07 . 2022 </p>
+          
+        </Flex>
+        <Flex 
+        sx={{
+          backgroundColor: "primary",
+          marginBottom: `1.45rem`,
+          fontFamily: "heading",
+          textAlign: "center",
+          alignItems: 'center',
+          justifyContent: "center",
+          flexDirection: "row",
+          margin: 0
+        }}>
           <Link
-            to="/"
-            style={{
-              textDecoration: `none`,
-              color: `white`,
-            }}
-          >
-            {siteTitle}
-          </Link>
-        </h1>
-        <p>16 . 07 . 22</p>
-        <div>
-        <Link
             to="/faq"
             activeClassName="active"
             sx={{
@@ -56,6 +77,7 @@ const Header = ({ siteTitle }) => {
           >
             Praktische info
           </Link>
+          |
           <Link
             to="/rsvp"
             activeClassName="active"
@@ -73,6 +95,7 @@ const Header = ({ siteTitle }) => {
           >
             RSVP
           </Link>
+          |
           <Link
             to="/countdown"
             activeClassName="active"
@@ -90,10 +113,9 @@ const Header = ({ siteTitle }) => {
           >
             Countdown
           </Link>
+        </Flex>
 
-        </div>
-
-      </div>
+      </Flex>
     </header>
   )
 }
