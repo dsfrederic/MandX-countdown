@@ -15,7 +15,7 @@ import "normalize.css"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 
-const Layout = ({ bgColor, children }) => {
+const Layout = ({ bgColor = "backgroudn", txtColor="text", children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,20 +26,20 @@ const Layout = ({ bgColor, children }) => {
     }
   `)
 
-  if(!bgColor){bgColor = "background"}
-
   return (
-    <>
+    <div sx={{
+      fontFamily: "body", 
+      backgroundColor: bgColor,
+      color: txtColor,
+      minHeight: "100vh"
+    }}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
           margin: `0 auto`,
+          paddingTop: '2rem',
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
-        }}
-        sx={{
-          fontFamily: "body", 
-          backgroundColor: bgColor
         }}
       >
         <main>{children}</main>
@@ -51,7 +51,7 @@ const Layout = ({ bgColor, children }) => {
           © built by Frédéric De Smet
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -9,7 +9,8 @@ const theme = {
     colors: {
         text: "#000",
         primary: PRIMARY_COLOR,
-        background: "#fff"
+        background: "#fff", 
+        headingTxtColor: "#fff"
     },
     forms: {
         // label: {
