@@ -197,7 +197,7 @@ export default class rsvp extends React.Component {
         </Box>
 
 
-        <p>{Object.values(this.state)}</p>
+        {/* <p>{Object.values(this.state)}</p> */}
 
       </Layout>
     )
