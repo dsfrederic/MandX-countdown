@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => {
   return (
     <header
       sx={{
-        backgroundColor: "primary",
+        // backgroundColor: "primary",
         marginBottom: `1.45rem`,
         fontFamily: "heading",
         margin: 0
@@ -28,7 +28,6 @@ const Header = ({ siteTitle }) => {
         }}
       >
         <Flex sx={{
-          backgroundColor: "primary",
           fontFamily: "heading",
           textAlign: "center",
           alignItems: 'center',
@@ -51,7 +50,6 @@ const Header = ({ siteTitle }) => {
         </Flex>
         <Flex 
         sx={{
-          backgroundColor: "primary",
           marginBottom: `1.45rem`,
           fontFamily: "heading",
           textAlign: "center",

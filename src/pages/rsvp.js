@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { Link, navigate } from "gatsby"
 
-
+/** @jsx jsx */
 import {
   Label,
   Input,
@@ -15,7 +15,8 @@ import {
   Button,
   Grid,
   Switch,
-  Spinner
+  Spinner, 
+  jsx
 } from 'theme-ui'
 
 const password = "juli2022"
@@ -144,7 +145,13 @@ export default class rsvp extends React.Component {
                     onChange={this.handleInputChange}
                   />
                   Ik wens gebruik te maken van de gratis shuttle service op zaterdag aangezien ik een hotel heb geboekt van op
-                  <Link to="/faq#shuttleHotels" style={{marginLeft: "0.25em"}}> deze lijst</Link>
+                  <Link to="/faq#shuttleHotels" style={{marginLeft: "0.25em"}} sx={{
+            color: "primary",
+            textDecoration: "none", 
+            '&: hover': {
+              color: "secondary"
+            }
+          }} > deze lijst</Link>
                 </Label>
                 <Label>
                   <Radio

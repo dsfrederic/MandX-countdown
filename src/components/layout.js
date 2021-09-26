@@ -15,7 +15,7 @@ import "normalize.css"
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 
-const Layout = ({ bgColor = "backgroudn", txtColor="text", children }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -29,8 +29,6 @@ const Layout = ({ bgColor = "backgroudn", txtColor="text", children }) => {
   return (
     <div sx={{
       fontFamily: "body", 
-      backgroundColor: bgColor,
-      color: txtColor,
       minHeight: "100vh",
       paddingBottom: "30px"
     }}>

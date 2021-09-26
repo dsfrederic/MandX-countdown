@@ -7,10 +7,11 @@ const PRIMARY_COLOR_LIGHT = "#49916c"
 const theme = {
     ...bulma,
     colors: {
-        text: "#000",
-        primary: PRIMARY_COLOR,
-        background: "#fff", 
-        headingTxtColor: "#fff"
+        text: '#ffffff',
+        background: '#0c2d1c',
+        primary: '#237049',
+        secondary: '#a04c08',
+        muted: '#b7b7b7'
     },
     breakpoints: ['40em', '56em', '64em'],
     forms: {
