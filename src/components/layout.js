@@ -38,6 +38,7 @@ const Layout = ({ bgColor = "backgroudn", txtColor="text", children }) => {
       <div
         style={{
           margin: `0px auto`,
+          padding: "10px 25px",
           paddingTop: '2rem',
           maxWidth: 960
         }}
