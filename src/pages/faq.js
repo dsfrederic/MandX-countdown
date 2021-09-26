@@ -15,7 +15,7 @@ const Countdown = () => {
         <p>Hieronder kan je alvast wat praktische info vinden omtrent ons trouwweekend.</p>
 
        <span style={{padding: "25px"}}></span>
-        <h4>Dit is een vraag?</h4>
+        <h4 id="shuttleHotels">Dit is een vraag?</h4>
         <p>
           
         <a href={downloadFile} download>Download bestand</a>{` `}

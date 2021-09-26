@@ -22,10 +22,10 @@ const password = "juli2022"
 
 export default class rsvp extends React.Component {
   state = {
-    passwordInput: "",
+    passwordInput: "juli2022",
     name: "",
     email: "",
-    present: true,
+    present: false,
     attendees: "",
     message: "",
     disableSubmit: false,
@@ -108,6 +108,70 @@ export default class rsvp extends React.Component {
             {this.state.present && <>
               <Label htmlFor="attendees">Met hoeveel personen zal je aanwezig zijn?</Label>
               <Input type="number" min="1" required name="attendees" id="attendees" mb={3} value={this.state.attendees} onChange={this.handleInputChange} />
+              <div style={{marginBottom: "20px"}}>
+                <Label htmlFor="arrival">Wanneer zou je arriveren?</Label>
+                <Label>
+                  <Radio
+                    name='arrival'
+                    value='friday'
+                    defaultChecked={true}
+                  />
+                  Ik arriveer op vrijdag en kom naar de welkomstborrel
+                </Label>
+                <Label>
+                  <Radio
+                    name='arrival'
+                    value='saturday'
+                  />
+                  Ik ben aanwezig voor de ceremonie en het feest op zaterdag
+                </Label>
+              </div>
+              <div style={{marginBottom: "20px"}}>
+                <Label htmlFor="arrival">Waar zou je verblijven?</Label>
+                <Label>
+                  <Radio
+                    name='accomodation'
+                    value='shuttle'
+                    defaultChecked={true}
+                  />
+                  Ik wens gebruik te maken van de gratis shuttle service op zaterdag aangezien ik een hotel heb geboekt van op
+                  <Link to="/faq#shuttleHotels" style={{marginLeft: "0.25em"}}> deze lijst</Link>
+                </Label>
+                <Label>
+                  <Radio
+                    name='accomodation'
+                    value='camping'
+                  />
+                  Ik zou graag op de camping verblijven
+                </Label>
+                <Label>
+                  <Radio
+                    name='accomodation'
+                    value='own'
+                  />
+                  Ik voorzie eigen accomodatie
+                </Label>
+              </div>
+
+              <div style={{marginBottom: "20px"}}>
+                <Label htmlFor="arrival">Wanneer zou je vertrekken?</Label>
+                <Label>
+                  <Radio
+                    name='departure'
+                    value='camping'
+                  />
+                  Ik ben al ribbedebie voor het ontbijt
+                </Label>
+                <Label>
+                  <Radio
+                    name='departure'
+                    value='shuttle'
+                    defaultChecked={true}
+                  />
+                  Ik neem afscheid na het ontbijt
+                </Label>
+            
+              </div>
 
               <Label htmlFor="message">Heb je nog vragen/opmerkingen/...?</Label>
               <Textarea required name="message" id="message" rows={6} mb={3} value={this.state.message} onChange={this.handleInputChange} />

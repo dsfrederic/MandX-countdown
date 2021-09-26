@@ -31,7 +31,8 @@ const Layout = ({ bgColor = "backgroudn", txtColor="text", children }) => {
       fontFamily: "body", 
       backgroundColor: bgColor,
       color: txtColor,
-      minHeight: "100vh"
+      minHeight: "100vh",
+      paddingBottom: "30px"
     }}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
