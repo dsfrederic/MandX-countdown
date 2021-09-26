@@ -36,20 +36,12 @@ const Layout = ({ bgColor = "backgroudn", txtColor="text", children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
-          margin: `20px auto`,
+          margin: `0px auto`,
           paddingTop: '2rem',
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          maxWidth: 960
         }}
       >
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © built by Frédéric De Smet
-        </footer>
       </div>
     </div>
   )

@@ -1,8 +1,8 @@
 # X and M countdown 
 
 - [] Netlify function to save into Google sheets 
-- [] Update countdown page with save the date info
-- [] Praktische info pagina udpaten 
-- [] Logo's toevoegen 
+- [X] Update countdown page with save the date info
+- [] Praktische info pagina updaten 
+- [X] Logo's toevoegen 
 - [] Paswoord op rsvp pagina
 -  
