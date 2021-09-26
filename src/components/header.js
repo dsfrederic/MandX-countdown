@@ -78,7 +78,7 @@ const Header = ({ siteTitle }) => {
             Praktische info
           </Link>
           |
-          <Link
+          {/* <Link
             to="/rsvp"
             activeClassName="active"
             sx={{
@@ -95,7 +95,7 @@ const Header = ({ siteTitle }) => {
           >
             RSVP
           </Link>
-          |
+          | */}
           <Link
             to="/"
             activeClassName="active"
