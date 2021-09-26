@@ -22,7 +22,8 @@ module.exports = {
       options: {
         fonts: [
           "Oswald", 
-          "Cardo"
+          "Cardo", 
+          "Segoe UI"
         ],
         display: 'swap'
       }

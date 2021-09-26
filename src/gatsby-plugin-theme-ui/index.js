@@ -8,7 +8,7 @@ const theme = {
     ...bulma,
     colors: {
         text: "#000",
-        primary: PRIMARY_COLOR_LIGHT,
+        primary: PRIMARY_COLOR,
         background: "#fff"
     },
     forms: {
@@ -44,8 +44,8 @@ const theme = {
         },
     },
     fonts: {
-        body: '"Cardo",system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-        heading: 'Oswald ,Georgia, serif',
+        body: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";',
+        heading: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";',
         monospace: 'Menlo, monospace',
       },
     fontSizes: [14, 16, 18, 20, 22, 27, 36, 64, 80],
@@ -95,8 +95,9 @@ const theme = {
             height: "20vh",
         },
         h1: {
-            fontSize: [4, 5, 6],
+            fontWeight: "bolder",
             lineHeight: "heading",
+            fontSize: 8,
             margin: 0,
             maxWidth: ["60vw", "500px", "800px"]
         },

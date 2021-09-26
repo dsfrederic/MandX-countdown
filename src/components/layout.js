@@ -10,12 +10,12 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import "normalize.css"
 
 /** @jsx jsx */
 import { jsx } from "theme-ui"
 
-const Layout = ({ children }) => {
+const Layout = ({ bgColor, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,6 +25,8 @@ const Layout = ({ children }) => {
       }
     }
   `)
+
+  if(!bgColor){bgColor = "background"}
 
   return (
     <>
@@ -36,7 +38,8 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
         sx={{
-          fontFamily: "body"
+          fontFamily: "body", 
+          backgroundColor: bgColor
         }}
       >
         <main>{children}</main>

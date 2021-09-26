@@ -6,7 +6,7 @@ import Layout  from "../components/layout"
 // markup
 const Countdown = () => {
   return (
-    <Layout>
+    <Layout bgColor="primary">
       <CountdownContainer 
             targetDate="2022-04-28 00:00:00"
             daysLabel="dagen"
