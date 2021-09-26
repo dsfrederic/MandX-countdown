@@ -36,7 +36,7 @@ const Layout = ({ bgColor = "backgroudn", txtColor="text", children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
-          margin: `0 auto`,
+          margin: `20px auto`,
           paddingTop: '2rem',
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
