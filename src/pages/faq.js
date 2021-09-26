@@ -15,14 +15,13 @@ const Countdown = () => {
         <p>Hieronder kan je alvast wat praktische info vinden omtrent ons trouwweekend.</p>
 
        <span style={{padding: "25px"}}></span>
-        <h4 id="shuttleHotels">Dit is een vraag?</h4>
+        <h4 id="shuttleHotels">Waar kan ik overnachten?</h4>
         <p>
-          
-        <a href={downloadFile} download>Download bestand</a>{` `}
-
+          In onderstaand bestand kan je een lijst van accomodaties in buurt vinden. Daarenboven wordt een gratis shuttle service voorzien voor deze adressen. 
+        <a href={downloadFile} download>Download lijst</a>{` `}
         </p>
         <Divider />
-        <h4>Dit is een vraag?</h4>
+        {/* <h4>Dit is een vraag?</h4>
         <p>Antwoord</p>
         <Divider />
         <h4>Dit is een vraag?</h4>
@@ -30,7 +29,7 @@ const Countdown = () => {
         <Divider />
         <h4>Dit is een vraag?</h4>
         <p>Antwoord</p>
-        <Divider />
+        <Divider /> */}
     </Layout>
   )
 }
