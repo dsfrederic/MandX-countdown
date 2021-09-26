@@ -22,11 +22,14 @@ const password = "juli2022"
 
 export default class rsvp extends React.Component {
   state = {
-    passwordInput: "juli2022",
+    passwordInput: "",
     name: "",
     email: "",
     present: false,
-    attendees: "",
+    attendees: 1,
+    arrival: "", 
+    accomodation: "", 
+    departure: "",
     message: "",
     disableSubmit: false,
   }
@@ -60,6 +63,9 @@ export default class rsvp extends React.Component {
       email: this.state.email,
       present: this.state.present,
       attendees: this.state.attendees,
+      arrival:  this.state.arrival ,
+      accomodation: this.state.accomodation, 
+      departure: this.state.departure,
       message: this.state.message,
       date: date.toString()
     }
@@ -108,13 +114,14 @@ export default class rsvp extends React.Component {
             {this.state.present && <>
               <Label htmlFor="attendees">Met hoeveel personen zal je aanwezig zijn?</Label>
               <Input type="number" min="1" required name="attendees" id="attendees" mb={3} value={this.state.attendees} onChange={this.handleInputChange} />
+              
               <div style={{marginBottom: "20px"}}>
                 <Label htmlFor="arrival">Wanneer zou je arriveren?</Label>
                 <Label>
                   <Radio
                     name='arrival'
                     value='friday'
-                    defaultChecked={true}
+                    onChange={this.handleInputChange}
                   />
                   Ik arriveer op vrijdag en kom naar de welkomstborrel
                 </Label>
@@ -122,17 +129,19 @@ export default class rsvp extends React.Component {
                   <Radio
                     name='arrival'
                     value='saturday'
+                    onChange={this.handleInputChange}
                   />
                   Ik ben aanwezig voor de ceremonie en het feest op zaterdag
                 </Label>
               </div>
+
               <div style={{marginBottom: "20px"}}>
-                <Label htmlFor="arrival">Waar zou je verblijven?</Label>
+                <Label htmlFor="accomodation">Waar zou je verblijven?</Label>
                 <Label>
                   <Radio
                     name='accomodation'
                     value='shuttle'
-                    defaultChecked={true}
+                    onChange={this.handleInputChange}
                   />
                   Ik wens gebruik te maken van de gratis shuttle service op zaterdag aangezien ik een hotel heb geboekt van op
                   <Link to="/faq#shuttleHotels" style={{marginLeft: "0.25em"}}> deze lijst</Link>
@@ -141,6 +150,7 @@ export default class rsvp extends React.Component {
                   <Radio
                     name='accomodation'
                     value='camping'
+                    onChange={this.handleInputChange}
                   />
                   Ik zou graag op de camping verblijven
                 </Label>
@@ -148,17 +158,19 @@ export default class rsvp extends React.Component {
                   <Radio
                     name='accomodation'
                     value='own'
+                    onChange={this.handleInputChange}
                   />
                   Ik voorzie eigen accomodatie
                 </Label>
               </div>
 
               <div style={{marginBottom: "20px"}}>
-                <Label htmlFor="arrival">Wanneer zou je vertrekken?</Label>
+                <Label htmlFor="departure">Wanneer zou je vertrekken?</Label>
                 <Label>
                   <Radio
                     name='departure'
-                    value='camping'
+                    value='before breakfast'
+                    onChange={this.handleInputChange}
                   />
                   Ik ben al ribbedebie voor het ontbijt
                 </Label>
@@ -166,7 +178,7 @@ export default class rsvp extends React.Component {
                   <Radio
                     name='departure'
                     value='shuttle'
-                    defaultChecked={true}
+                    onChange={this.handleInputChange}
                   />
                   Ik neem afscheid na het ontbijt
                 </Label>
@@ -183,6 +195,10 @@ export default class rsvp extends React.Component {
             {this.state.disableSubmit && <Spinner />}
           </>}
         </Box>
+
+
+        <p>{Object.values(this.state)}</p>
+
       </Layout>
     )
   }
