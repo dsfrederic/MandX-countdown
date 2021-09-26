@@ -10,7 +10,7 @@ const Countdown = () => {
   return (
     <Layout bgColor="primary" txtColor="#fff">
       <CountdownContainer
-        targetDate="2022-04-28 00:00:00"
+        targetDate="2022-07-16 15:00:00"
         daysLabel="dagen"
         hoursLabel="uren"
         minutesLabel="minuten"

@@ -8,5 +8,7 @@
 - [X] Form aanpassen
 - [] Fix deze lijst space bug
 - [X] Form padding
+- [] Overal groene achtergrond 
+- [X] Countdown checken
 
 
