@@ -129,7 +129,7 @@ export default class rsvp extends React.Component {
           </>
           }
 
-          {!(this.state.formLocked) && <>
+          {(this.state.formLocked) && <>
 
             <Label htmlFor="name">Naam</Label>
             <Input required name="name" id="name" mb={3} value={this.state.name} onChange={this.handleInputChange} />
