@@ -169,10 +169,7 @@ export default class rsvp extends React.Component {
                   }} > deze lijst</Link>
                 </Label>
 
-                {this.state.accomodation == 'shuttle' && <>
-                  <Label htmlFor="hotel">Welk hotel heb je geboekt?</Label>
-                  <Input required name="hotel" id="hotel" mb={3} value={this.state.hotel} onChange={this.handleInputChange} />
-                </>}
+                
                 <Label>
                   <Radio
                     name='accomodation'
@@ -190,6 +187,11 @@ export default class rsvp extends React.Component {
                   Ik voorzie eigen accomodatie
                 </Label>
               </div>
+
+              {this.state.accomodation == 'shuttle' && <>
+                  <Label htmlFor="hotel">Welk hotel heb je geboekt?</Label>
+                  <Input required name="hotel" id="hotel" mb={3} value={this.state.hotel} onChange={this.handleInputChange} />
+                </>}
 
               <div style={{ marginBottom: "20px" }}>
                 <Label htmlFor="departure">Ben je aanwezig op de afscheidsbrunch op zondag?</Label>
