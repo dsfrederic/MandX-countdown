@@ -54,10 +54,16 @@ export default class rsvp extends React.Component {
 
     if(value == password) {
       this.setState({
+        [name]: value,
+      })
+      this.setState({
         ['formLocked']: false,
       })
       this.setState({ ['disableSubmit']: false })
     } else {
+      this.setState({
+        [name]: value,
+      })
       this.setState({
         ['formLocked']: true,
       })
@@ -117,7 +123,7 @@ export default class rsvp extends React.Component {
     return (
       <Layout>
         <Box as="form" onSubmit={this.handleSubmit}>
-          {(this.state.passwordInput != password) && <>
+          {!(this.state.formLocked) && <>
             <Label htmlFor="passwordInput">Paswoord</Label>
             <Input required name="passwordInput" id="passwordInput" mb={3} value={this.state.passwordInput} onChange={this.toggleFormLock} />
           </>
