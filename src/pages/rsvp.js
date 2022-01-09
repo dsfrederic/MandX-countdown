@@ -15,7 +15,7 @@ import {
   Button,
   Grid,
   Switch,
-  Spinner, 
+  Spinner,
   jsx
 } from 'theme-ui'
 
@@ -28,9 +28,9 @@ export default class rsvp extends React.Component {
     email: "",
     present: false,
     attendees: 1,
-    arrival: "", 
-    accomodation: "", 
-    hotel: "", 
+    arrival: "",
+    accomodation: "",
+    hotel: "",
     departure: "",
     message: "",
     disableSubmit: false,
@@ -77,9 +77,9 @@ export default class rsvp extends React.Component {
       email: this.state.email,
       present: this.state.present,
       attendees: this.state.attendees,
-      arrival:  this.state.arrival ,
-      accomodation: this.state.accomodation, 
-      hotel: this.state.hotel, 
+      arrival: this.state.arrival,
+      accomodation: this.state.accomodation,
+      hotel: this.state.hotel,
 
       departure: this.state.departure,
       message: this.state.message,
@@ -130,8 +130,8 @@ export default class rsvp extends React.Component {
             {this.state.present && <>
               <Label htmlFor="attendees">Met hoeveel personen zal je aanwezig zijn?</Label>
               <Input type="number" min="1" required name="attendees" id="attendees" mb={3} value={this.state.attendees} onChange={this.handleInputChange} />
-              
-              <div style={{marginBottom: "20px"}}>
+
+              <div style={{ marginBottom: "20px" }}>
                 <Label htmlFor="arrival">Wanneer zou je arriveren?</Label>
                 <Label>
                   <Radio
@@ -151,7 +151,7 @@ export default class rsvp extends React.Component {
                 </Label>
               </div>
 
-              <div style={{marginBottom: "20px"}}>
+              <div style={{ marginBottom: "20px" }}>
                 <Label htmlFor="accomodation">Waar zou je verblijven?</Label>
                 <Label>
                   <Radio
@@ -160,18 +160,18 @@ export default class rsvp extends React.Component {
                     onChange={this.handleInputChange}
                   />
                   Ik wens gebruik te maken van de gratis shuttle service op zaterdag aangezien ik een hotel heb geboekt van op
-                  <Link to="/faq#shuttleHotels" style={{marginLeft: "0.25em"}} sx={{
-            color: "primary",
-            textDecoration: "none", 
-            '&: hover': {
-              color: "secondary"
-            }
-          }} > deze lijst</Link>
+                  <Link to="/faq#shuttleHotels" style={{ marginLeft: "0.25em" }} sx={{
+                    color: "primary",
+                    textDecoration: "none",
+                    '&: hover': {
+                      color: "secondary"
+                    }
+                  }} > deze lijst</Link>
                 </Label>
 
-                { this.state.accomodation == 'shuttle' && <>
-                <Label htmlFor="hotel">Welk hotel heb je geboekt?</Label>
-                <Input required name="hotel" id="hotel" mb={3} value={this.state.hotel} onChange={this.handleInputChange} />
+                {this.state.accomodation == 'shuttle' && <>
+                  <Label htmlFor="hotel">Welk hotel heb je geboekt?</Label>
+                  <Input required name="hotel" id="hotel" mb={3} value={this.state.hotel} onChange={this.handleInputChange} />
                 </>}
                 <Label>
                   <Radio
@@ -191,7 +191,7 @@ export default class rsvp extends React.Component {
                 </Label>
               </div>
 
-              <div style={{marginBottom: "20px"}}>
+              <div style={{ marginBottom: "20px" }}>
                 <Label htmlFor="departure">Ben je aanwezig op de afscheidsbrunch op zondag?</Label>
                 <Label>
                   <Radio
@@ -209,7 +209,7 @@ export default class rsvp extends React.Component {
                   />
                   Ja, heerlijk!
                 </Label>
-            
+
               </div>
 
               <Label htmlFor="message">Heb je nog vragen/opmerkingen/...?</Label>
