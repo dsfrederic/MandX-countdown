@@ -46,6 +46,18 @@ export default class rsvp extends React.Component {
     })
   }
 
+  inputPassword = event => {
+    const target = event.target
+    const value = target.value
+    const name = target.name
+
+    this.setState({
+      [name]: value,
+    })
+
+    this.setState({ ['disableSubmit']: true })
+  }
+
   togglePresent = event => {
     const value = !this.state.present
 
@@ -100,7 +112,7 @@ export default class rsvp extends React.Component {
         <Box as="form" onSubmit={this.handleSubmit}>
           {(this.state.passwordInput != password) && <>
             <Label htmlFor="passwordInput">Paswoord</Label>
-            <Input required name="passwordInput" id="passwordInput" mb={3} value={this.state.passwordInput} onChange={this.handleInputChange} />
+            <Input required name="passwordInput" id="passwordInput" mb={3} value={this.state.passwordInput} onChange={this.inputPassword} />
           </>
           }
 
@@ -158,6 +170,7 @@ export default class rsvp extends React.Component {
                 </Label>
 
                 { this.state.accomodation == 'shuttle' && <>
+                <Label htmlFor="hotel">Welk hotel heb je geboekt?</Label>
                 <Input required name="hotel" id="hotel" mb={3} value={this.state.hotel} onChange={this.handleInputChange} />
                 </>}
                 <Label>
