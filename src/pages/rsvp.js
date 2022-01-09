@@ -24,6 +24,7 @@ const password = "16072022mx"
 export default class rsvp extends React.Component {
   state = {
     passwordInput: "",
+    formLocked: true,
     name: "",
     email: "",
     present: false,
@@ -46,16 +47,22 @@ export default class rsvp extends React.Component {
     })
   }
 
-  inputPassword = event => {
+  toggleFormLock = event => {
     const target = event.target
     const value = target.value
     const name = target.name
 
-    this.setState({
-      [name]: value,
-    })
-
-    this.setState({ ['disableSubmit']: true })
+    if(value == password) {
+      this.setState({
+        ['formLocked']: false,
+      })
+      this.setState({ ['disableSubmit']: false })
+    } else {
+      this.setState({
+        ['formLocked']: true,
+      })
+      this.setState({ ['disableSubmit']: true })
+    }
   }
 
   togglePresent = event => {
@@ -112,11 +119,11 @@ export default class rsvp extends React.Component {
         <Box as="form" onSubmit={this.handleSubmit}>
           {(this.state.passwordInput != password) && <>
             <Label htmlFor="passwordInput">Paswoord</Label>
-            <Input required name="passwordInput" id="passwordInput" mb={3} value={this.state.passwordInput} onChange={this.inputPassword} />
+            <Input required name="passwordInput" id="passwordInput" mb={3} value={this.state.passwordInput} onChange={this.toggleFormLock} />
           </>
           }
 
-          {(this.state.passwordInput === password) && <>
+          {!(this.state.formLocked) && <>
 
             <Label htmlFor="name">Naam</Label>
             <Input required name="name" id="name" mb={3} value={this.state.name} onChange={this.handleInputChange} />
