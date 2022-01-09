@@ -19,7 +19,7 @@ import {
   jsx
 } from 'theme-ui'
 
-const password = "juli2022"
+const password = "16072022mx"
 
 export default class rsvp extends React.Component {
   state = {
@@ -30,6 +30,7 @@ export default class rsvp extends React.Component {
     attendees: 1,
     arrival: "", 
     accomodation: "", 
+    hotel: "", 
     departure: "",
     message: "",
     disableSubmit: false,
@@ -66,6 +67,8 @@ export default class rsvp extends React.Component {
       attendees: this.state.attendees,
       arrival:  this.state.arrival ,
       accomodation: this.state.accomodation, 
+      hotel: this.state.hotel, 
+
       departure: this.state.departure,
       message: this.state.message,
       date: date.toString()
@@ -153,6 +156,10 @@ export default class rsvp extends React.Component {
             }
           }} > deze lijst</Link>
                 </Label>
+
+                { this.state.accomodation == 'shuttle' && <>
+                <Input required name="hotel" id="hotel" mb={3} value={this.state.hotel} onChange={this.handleInputChange} />
+                </>}
                 <Label>
                   <Radio
                     name='accomodation'
@@ -172,14 +179,14 @@ export default class rsvp extends React.Component {
               </div>
 
               <div style={{marginBottom: "20px"}}>
-                <Label htmlFor="departure">Wanneer zou je vertrekken?</Label>
+                <Label htmlFor="departure">Ben je aanwezig op de afscheidsbrunch op zondag?</Label>
                 <Label>
                   <Radio
                     name='departure'
                     value='before breakfast'
                     onChange={this.handleInputChange}
                   />
-                  Ik ben al ribbedebie voor het ontbijt
+                  Neen, ik ben al ribbedebie voor het ontbijt!
                 </Label>
                 <Label>
                   <Radio
@@ -187,7 +194,7 @@ export default class rsvp extends React.Component {
                     value='shuttle'
                     onChange={this.handleInputChange}
                   />
-                  Ik neem afscheid na het ontbijt
+                  Ja, heerlijk!
                 </Label>
             
               </div>
