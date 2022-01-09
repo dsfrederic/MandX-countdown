@@ -123,7 +123,7 @@ export default class rsvp extends React.Component {
     return (
       <Layout>
         <Box as="form" onSubmit={this.handleSubmit}>
-          {!(this.state.formLocked) && <>
+          {(this.state.formLocked) && <>
             <Label htmlFor="passwordInput">Paswoord</Label>
             <Input required name="passwordInput" id="passwordInput" mb={3} value={this.state.passwordInput} onChange={this.toggleFormLock} />
           </>
