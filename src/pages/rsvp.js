@@ -33,6 +33,7 @@ export default class rsvp extends React.Component {
     accomodation: "",
     hotel: "",
     departure: "",
+    foodOther: "",
     message: "",
     disableSubmit: false,
   }
@@ -93,7 +94,8 @@ export default class rsvp extends React.Component {
       arrival: this.state.arrival,
       accomodation: this.state.accomodation,
       hotel: this.state.hotel,
-
+      food: this.state.food,
+      foodOther: this.state.foodOther,
       departure: this.state.departure,
       message: this.state.message,
       date: date.toString()
@@ -160,7 +162,7 @@ export default class rsvp extends React.Component {
                     value='saturday'
                     onChange={this.handleInputChange}
                   />
-                  Ik ben aanwezig voor de ceremonie en het feest op zaterdag
+                  Ik arriveer op zaterdag
                 </Label>
               </div>
 
@@ -225,6 +227,38 @@ export default class rsvp extends React.Component {
                   Ja, heerlijk!
                 </Label>
 
+              </div>
+
+              <div style={{ marginBottom: "20px" }}>
+                <Label htmlFor="food">Heb je speciale vv?</Label>
+                <Label>
+                  <Radio
+                    name='food'
+                    value='NA'
+                    onChange={this.handleInputChange}
+                  />
+                  Ik eet alles
+                </Label>
+                <Label>
+                  <Radio
+                    name='food'
+                    value='veggie-vegan'
+                    onChange={this.handleInputChange}
+                  />
+                  Voor mij graag vegetarisch/vegan
+                </Label>
+                <Label>
+                  <Radio
+                    name='food'
+                    value='other'
+                    onChange={this.handleInputChange}
+                  />
+                  Andere
+                </Label>
+                {this.state.food == 'other' && <>
+                  <Label htmlFor="foodOther">Welk hotel heb je geboekt?</Label>
+                  <Input required name="foodOther" id="foodOther" mb={3} value={this.state.foodOther} onChange={this.handleInputChange} />
+                </>}
               </div>
 
               <Label htmlFor="message">Heb je nog vragen/opmerkingen/...?</Label>
