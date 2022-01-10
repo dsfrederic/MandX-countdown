@@ -230,7 +230,7 @@ export default class rsvp extends React.Component {
               </div>
 
               <div style={{ marginBottom: "20px" }}>
-                <Label htmlFor="food">Heb je speciale vv?</Label>
+                <Label htmlFor="food">Heb je speciale voorkeuren qua voeding?</Label>
                 <Label>
                   <Radio
                     name='food'
@@ -256,7 +256,7 @@ export default class rsvp extends React.Component {
                   Andere
                 </Label>
                 {this.state.food == 'other' && <>
-                  <Label htmlFor="foodOther">Welk hotel heb je geboekt?</Label>
+                  <Label htmlFor="foodOther">Verklaar nader:</Label>
                   <Input required name="foodOther" id="foodOther" mb={3} value={this.state.foodOther} onChange={this.handleInputChange} />
                 </>}
               </div>
