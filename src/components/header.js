@@ -115,6 +115,24 @@ const Header = ({ siteTitle }) => {
           >
             Countdown
           </Link>
+          <Link
+            to="/rsvp"
+            activeClassName="active"
+            sx={{
+              textDecoration: "none",
+              color: 'inherit',
+              margin: "0 5px",
+              '&:hover': {
+                color: "white"
+              },
+              '&.active': {
+                fontWeight: 'bolder',
+                color: "white"
+              },
+            }}
+          >
+            RSVP
+          </Link>
         </Flex>
 
       </Flex>
