@@ -221,7 +221,7 @@ export default class rsvp extends React.Component {
                 <Label>
                   <Radio
                     name='departure'
-                    value='shuttle'
+                    value='aanwezig bij het ontbijt'
                     onChange={this.handleInputChange}
                   />
                   Ja, heerlijk!
