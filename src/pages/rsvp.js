@@ -142,9 +142,11 @@ export default class rsvp extends React.Component {
               <Switch required label="Zal je aanwezig zijn op het trouwfeest?" checked={this.state.present} onChange={this.togglePresent} />
             </div>
 
+            <Label htmlFor="message">Heb je nog vragen/opmerkingen/...?</Label>
+            <Textarea required name="message" id="message" rows={6} mb={3} value={this.state.message} onChange={this.handleInputChange} />
             {this.state.present && <>
               <Label htmlFor="attendees">Met hoeveel personen zal je aanwezig zijn?</Label>
-              <Input type="number" min="1" required name="attendees" id="attendees" mb={3} value={this.state.attendees} onChange={this.handleInputChange} />
+              <Input type="number" min="1" name="attendees" id="attendees" mb={3} value={this.state.attendees} onChange={this.handleInputChange} />
 
               <div style={{ marginBottom: "20px" }}>
                 <Label htmlFor="arrival">Wanneer zou je arriveren?</Label>
@@ -205,7 +207,7 @@ export default class rsvp extends React.Component {
 
               {this.state.accomodation == 'shuttle' && <>
                   <Label htmlFor="hotel">Welk hotel heb je geboekt?</Label>
-                  <Input required name="hotel" id="hotel" mb={3} value={this.state.hotel} onChange={this.handleInputChange} />
+                  <Input name="hotel" id="hotel" mb={3} value={this.state.hotel} onChange={this.handleInputChange} />
                 </>}
 
               <div style={{ marginBottom: "20px" }}>
@@ -260,9 +262,6 @@ export default class rsvp extends React.Component {
                   <Input required name="foodOther" id="foodOther" mb={3} value={this.state.foodOther} onChange={this.handleInputChange} />
                 </>}
               </div>
-
-              <Label htmlFor="message">Heb je nog vragen/opmerkingen/...?</Label>
-              <Textarea required name="message" id="message" rows={6} mb={3} value={this.state.message} onChange={this.handleInputChange} />
 
             </>
             }
