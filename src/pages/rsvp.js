@@ -152,7 +152,7 @@ export default class rsvp extends React.Component {
               <Label>
                 <Radio
                   name='Nee'
-                  checked={this.state.present}
+                  checked={!this.state.present}
                   onChange={this.togglePresent}
                 />
                 Nee
