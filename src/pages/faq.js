@@ -1,4 +1,6 @@
 import { Divider } from "@theme-ui/components"
+import { Grid, Box } from 'theme-ui'
+
 import * as React from "react"
 import Layout from "../components/layout"
 import downloadFile from '../files/Bb-en-hotels-Rennepont-april-2021.pdf'
@@ -40,8 +42,10 @@ const Countdown = () => {
       <p>
         De gemakkelijkste manier om naar onze trouwlocatie te komen is met de wagen. Er zijn 2 mogelijke routes via Rijsel of via Brussel/Charleroi. Tip: via deze laatste route is de tol merkelijk lager in vergelijking met de route via Rijsel.
       </p>
-      <img src={route_1} />
-      <img src={route_2} />
+      <Grid gap={2} columns={[2, 2, 1]}>
+        <Box><img src={route_1} /></Box>
+        <Box><img src={route_2} /></Box>
+      </Grid>
       <p>
         Adres Domaine Rennepont: 31 Rue Principale, FR-52370 Rennepont
       </p>
