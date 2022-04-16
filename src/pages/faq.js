@@ -42,7 +42,7 @@ const Countdown = () => {
       <p>
         De gemakkelijkste manier om naar onze trouwlocatie te komen is met de wagen. Er zijn 2 mogelijke routes via Rijsel of via Brussel/Charleroi. Tip: via deze laatste route is de tol merkelijk lager in vergelijking met de route via Rijsel.
       </p>
-      <Grid gap={2} columns={[2, 2, 1]}>
+      <Grid gap={2} columns={[1, 1, 2]}>
         <Box><img src={route_1} /></Box>
         <Box><img src={route_2} /></Box>
       </Grid>
