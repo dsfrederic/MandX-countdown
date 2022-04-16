@@ -43,8 +43,8 @@ const Countdown = () => {
         De gemakkelijkste manier om naar onze trouwlocatie te komen is met de wagen. Er zijn 2 mogelijke routes via Rijsel of via Brussel/Charleroi. Tip: via deze laatste route is de tol merkelijk lager in vergelijking met de route via Rijsel.
       </p>
       <Grid gap={2} columns={[1, 1, 2]}>
-        <Box><img src={route_1} /></Box>
-        <Box><img src={route_2} /></Box>
+        <Box><img style={{ width: "100%", height: "auto" }} src={route_1} /></Box>
+        <Box><img style={{ width: "100%", height: "auto" }} src={route_2} /></Box>
       </Grid>
       <p>
         Adres Domaine Rennepont: 31 Rue Principale, FR-52370 Rennepont
