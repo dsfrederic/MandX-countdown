@@ -19,7 +19,6 @@ const Countdown = () => {
       <div >
         <div style={{ "text-align": "center" }}>
           <h2>SAVE THE DATES</h2>
-          <p>Meer info volgt!</p>
           <hr style={{ width: "25%" }} />
           <div>
             <h3>18 juni 2022</h3>
