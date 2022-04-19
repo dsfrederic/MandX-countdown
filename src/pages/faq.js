@@ -56,7 +56,8 @@ const Countdown = () => {
       <Divider />
       <h4>Hoe ziet het programma er uit?</h4>
       <p>Vrijdagavond verwelkomen we jullie vanaf 18h00 in Domaine Rennepont voor een welkomstborrel met een hapje in franse stijl. <br />
-        <br />Zaterdagvoormiddag kan ieder invullen naar eigen wens in of rond zijn/haar accommodatie: een rustige brunch, de eerste kater verwerken, een wandelingetje of een bezoekje aan een champagneboer. It's up to you! <br/>Tussen 14h00 en 14h30 verzamelt iedereen op Domaine Rennepont. De ceremonie start om 15h00, gevolgd door de ceremonie, receptie, diner en dansfeest.
+        <br />Zaterdagvoormiddag kan ieder invullen naar eigen wens in of rond zijn/haar accommodatie: een rustige brunch, de eerste kater verwerken, een wandelingetje of een bezoekje aan een champagneboer. It's up to you! 
+        <br/>Tussen 14h00 en 14h30 verzamelt iedereen op Domaine Rennepont. De ceremonie start om 15h00, gevolgd door de receptie, diner en dansfeest.
         <br /> Op zondag verwelkomen we jullie opnieuw op het Domaine om 10h00 voor een ontbijtje.
       </p>
       <Divider />
